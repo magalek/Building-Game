@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7478127790457599794}
   - component: {fileID: 8714183901404945602}
   - component: {fileID: 4240917843795896083}
+  - component: {fileID: 8253243475215571365}
   m_Layer: 6
   m_Name: MineBuilding
   m_TagString: Untagged
@@ -46,6 +47,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   previewImage: {fileID: 0}
+  data: {fileID: 11400000, guid: c279a0f5a5efcea41af0d2b459fb1a7f, type: 2}
 --- !u!65 &4240917843795896083
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -59,6 +61,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 4, y: 1, z: 2}
   m_Center: {x: 0, y: 0.5, z: 0}
+--- !u!54 &8253243475215571365
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2450812473109087557}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &867838505797091379
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -118,10 +136,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 9500000, guid: 8066ce8eaec3bd44a97df2754f1bd665, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8066ce8eaec3bd44a97df2754f1bd665, type: 3}
+--- !u!1 &867838505797060243 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 8066ce8eaec3bd44a97df2754f1bd665, type: 3}
+  m_PrefabInstance: {fileID: 867838505797091379}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &867838505797491379 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 8066ce8eaec3bd44a97df2754f1bd665, type: 3}
   m_PrefabInstance: {fileID: 867838505797091379}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &3178061780222932181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 867838505797060243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f09cc538d4aef2d41a6791c6712b5978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blueprintMaterial: {fileID: 2100000, guid: 792e8a8559b7cff4ca6fe3bae9d26b17, type: 2}

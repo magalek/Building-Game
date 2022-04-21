@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: f09cc538d4aef2d41a6791c6712b5978
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - blueprintMaterial: {fileID: 2100000, guid: 792e8a8559b7cff4ca6fe3bae9d26b17, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
