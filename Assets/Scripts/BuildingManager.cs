@@ -52,7 +52,7 @@ public class BuildingManager : MonoBehaviour, IManager
     }
 
     private void PlaceBlueprint() {
-        if (Input.GetMouseButtonDown(0) && !blueprint.IsColliding && !buildingSetThisFrame) {
+        if (Input.GetMouseButtonDown(0) && blueprint && !blueprint.IsColliding && !buildingSetThisFrame) {
             blueprint.BlueprintMaterialChanger.SetInitial();
             blueprint.EnteredCollision -= OnEnteredCollision;
             blueprint.ExitedCollision -= OnExitedCollision;

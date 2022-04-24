@@ -133,6 +133,10 @@ PrefabInstance:
       value: UICurrency Box (2)
       objectReference: {fileID: 0}
     - target: {fileID: 5803654191527525151, guid: f993ee87cbdfb7747ac4059f68952fab, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a8861d299745ada46a88f14087b41ec5, type: 3}
+    - target: {fileID: 5803654191527525151, guid: f993ee87cbdfb7747ac4059f68952fab, type: 3}
       propertyPath: m_Color.g
       value: 0
       objectReference: {fileID: 0}
@@ -257,6 +261,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: UICurrency Box (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5803654191527525151, guid: f993ee87cbdfb7747ac4059f68952fab, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6687a12f9e22be64fb7392ff9b5fd26f, type: 3}
     - target: {fileID: 5803654191527525151, guid: f993ee87cbdfb7747ac4059f68952fab, type: 3}
       propertyPath: m_Color.b
       value: 0
@@ -386,6 +394,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: UICurrency Box
       objectReference: {fileID: 0}
+    - target: {fileID: 5803654191527525151, guid: f993ee87cbdfb7747ac4059f68952fab, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: c3a3e73842b3a0c43b2fac0fd0e6a0f9, type: 3}
     - target: {fileID: 5803654191527525151, guid: f993ee87cbdfb7747ac4059f68952fab, type: 3}
       propertyPath: m_Color.b
       value: 0

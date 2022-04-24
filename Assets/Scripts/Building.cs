@@ -48,16 +48,8 @@ public class Building : MonoBehaviour
     }
 
     public void Build() {
-        StartCoroutine(IncomeCoroutine());
+        currencyManager.AddIncomeSource(data);
     }
-
-    private IEnumerator IncomeCoroutine() {
-        while (gameObject.activeSelf) {
-            yield return new WaitForSeconds(data.incomeDelay);
-            currencyManager.AddIncome(data);
-        }
-    }
-
 
 #if UNITY_EDITOR
 

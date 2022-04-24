@@ -13,12 +13,12 @@ public class UICurrencyPanel : MonoBehaviour
 
     private void Start() {
         currencyManager = Managers.GetManager<CurrencyManager>();
-        currencyManager.CurrencyChanged += OnCurrencyChanged;
+        currencyManager.IncomeChanged += OnCurrencyChanged;
     }
 
     private void OnCurrencyChanged() {
-        goldLabel.text = currencyManager.Gold.ToString();
-        peopleLabel.text = currencyManager.People.ToString();
-        oreLabel.text = currencyManager.Ore.ToString();
+        goldLabel.text = $"{currencyManager.Gold} ({currencyManager.GoldTick})";
+        peopleLabel.text = $"{currencyManager.People} ({currencyManager.PeopleTick})";
+        oreLabel.text = $"{currencyManager.Ore} ({currencyManager.OreTick})";
     }
 }
