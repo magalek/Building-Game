@@ -20,6 +20,7 @@ public class Building : MonoBehaviour
     private BlueprintMaterialChanger blueprintMaterialChanger;
 
     private CurrencyManager currencyManager;
+    private FloatingLabelsManagers floatingLabelsManagers;
 
     private int collidersCount;
 
@@ -29,6 +30,7 @@ public class Building : MonoBehaviour
 
     private void Start() {
         currencyManager = Managers.GetManager<CurrencyManager>();
+        floatingLabelsManagers = Managers.GetManager<FloatingLabelsManagers>();
     }
 
     private void OnCollisionEnter(Collision collision) {
@@ -49,6 +51,11 @@ public class Building : MonoBehaviour
 
     public void Build() {
         currencyManager.AddIncomeSource(data);
+        currencyManager.IncomeChanged += ShowLabel;
+    }
+
+    private void ShowLabel() {
+        floatingLabelsManagers.Show(data, transform);
     }
 
 #if UNITY_EDITOR
