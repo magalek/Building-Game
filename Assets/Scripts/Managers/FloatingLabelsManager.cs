@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FloatingLabelsManagers : MonoBehaviour, IManager
+public class FloatingLabelsManager : MonoBehaviour, IManager
 {
     [SerializeField] private FloatingLabel floatingLabelPrefab;
 
